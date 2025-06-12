@@ -2,38 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simple Calculator</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Awesome Landing Page</title>
+  <link rel="stylesheet" href="style1.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="calculator">
-    <input type="text" id="display" readonly />
-    <div class="buttons">
-      <button onclick="clearDisplay()">C</button>
-      <button onclick="appendValue('/')">/</button>
-      <button onclick="appendValue('*')">*</button>
-      <button onclick="deleteLast()">⌫</button>
 
-      <button onclick="appendValue('7')">7</button>
-      <button onclick="appendValue('8')">8</button>
-      <button onclick="appendValue('9')">9</button>
-      <button onclick="appendValue('-')">-</button>
-
-      <button onclick="appendValue('4')">4</button>
-      <button onclick="appendValue('5')">5</button>
-      <button onclick="appendValue('6')">6</button>
-      <button onclick="appendValue('+')">+</button>
-
-      <button onclick="appendValue('1')">1</button>
-      <button onclick="appendValue('2')">2</button>
-      <button onclick="appendValue('3')">3</button>
-      <button onclick="calculate()">=</button>
-
-      <button onclick="appendValue('0')">0</button>
-      <button onclick="appendValue('.')">.</button>
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">MySite</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-  <script src="script.js"></script>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Build Your Dream Website</h2>
+      <p>Design. Develop. Launch. All in one place.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2>Who We Are</h2>
+      <p>We are a passionate team of designers and developers helping businesses stand out with modern, mobile-friendly websites.</p>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <h2>What We Offer</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Web Design</h3>
+          <p>Responsive and eye-catching designs tailored for your brand.</p>
+        </div>
+        <div class="card">
+          <h3>Development</h3>
+          <p>Clean, fast, and secure code for your website or app.</p>
+        </div>
+        <div class="card">
+          <h3>SEO Boost</h3>
+          <p>Rank higher on search engines with our optimization services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p>Email: hello@mysite.com | Phone: +91-XXXXXXXXXX</p>
+      <p>&copy; 2025 MySite. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
